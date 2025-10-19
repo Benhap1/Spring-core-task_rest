@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AuthControllerIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AuthControllerIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.gymcrm.gym_crm_spring.controller.html">com.gymcrm.gym_crm_spring.controller</a> &gt; AuthControllerIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.604s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">PUT /api/auth/change-login — fail on invalid old password</td>
+<td class="success">changeLogin_InvalidOldPassword_Fails()</td>
+<td class="success">0.290s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">PUT /api/auth/change-login — fail on non-existent user</td>
+<td class="success">changeLogin_NonExistentUser_Fails()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">PUT /api/auth/change-login — change password successfully</td>
+<td class="success">changeLogin_Success()</td>
+<td class="success">0.483s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET /api/auth/login — fail on invalid credentials</td>
+<td class="success">login_InvalidCredentials_Fails()</td>
+<td class="success">0.271s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET /api/auth/login — login user successfully</td>
+<td class="success">login_Success()</td>
+<td class="success">0.206s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST /api/auth/register/trainee — fail on duplicate user</td>
+<td class="success">registerTrainee_Duplicate_Fails()</td>
+<td class="success">0.113s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST /api/auth/register/trainee — register new Trainee successfully</td>
+<td class="success">registerTrainee_Success()</td>
+<td class="success">0.255s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST /api/auth/register/trainer — fail on duplicate user</td>
+<td class="success">registerTrainer_Duplicate_Fails()</td>
+<td class="success">1.772s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST /api/auth/register/trainer — register new Trainer successfully</td>
+<td class="success">registerTrainer_Success()</td>
+<td class="success">0.202s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>10:02:14.576 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.gymcrm.gym_crm_spring.controller.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:02:14.914 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.gymcrm.gym_crm_spring.GymCrmSpringApplication for test class com.gymcrm.gym_crm_spring.controller.AuthControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-19 10:02:15 [Test worker] INFO  c.g.g.c.AuthControllerIntegrationTest - [tx:] Starting AuthControllerIntegrationTest using Java 17.0.15 with PID 16892 (started by user in C:\Users\user\Desktop\epam\Spring-core-task)
+2025-10-19 10:02:15 [Test worker] INFO  c.g.g.c.AuthControllerIntegrationTest - [tx:] The following 1 profile is active: &quot;test&quot;
+2025-10-19 10:02:17 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [tx:] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-19 10:02:17 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [tx:] Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2025-10-19 10:02:18 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - [tx:] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-19 10:02:18 [Test worker] INFO  org.hibernate.Version - [tx:] HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-19 10:02:18 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - [tx:] HHH000026: Second-level cache disabled
+2025-10-19 10:02:18 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - [tx:] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-19 10:02:18 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - [tx:] HikariPool-1 - Starting...
+2025-10-19 10:02:19 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - [tx:] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:gymcrm_testdb user=SA
+2025-10-19 10:02:19 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - [tx:] HikariPool-1 - Start completed.
+2025-10-19 10:02:19 [Test worker] WARN  org.hibernate.orm.deprecation - [tx:] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-19 10:02:19 [Test worker] INFO  o.hibernate.orm.connections.pooling - [tx:] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-19 10:02:20 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [tx:] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] drop table if exists trainee cascade 
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] drop table if exists trainer cascade 
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] drop table if exists trainer_trainee cascade 
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] drop table if exists training cascade 
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] drop table if exists training_type cascade 
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] drop table if exists users cascade 
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] create table trainee (date_of_birth date, id uuid not null, address varchar(255), primary key (id))
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] create table trainer (id uuid not null, specialization_id uuid not null, primary key (id))
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] create table trainer_trainee (trainee_id uuid not null, trainer_id uuid not null, primary key (trainee_id, trainer_id))
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] create table training (training_date date not null, training_duration integer not null, id uuid not null, trainee_id uuid not null, trainer_id uuid not null, training_type_id uuid not null, training_name varchar(200) not null, primary key (id))
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] create table training_type (id uuid not null, training_type_name varchar(100) not null, primary key (id))
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] create table users (is_active boolean not null, id uuid not null, first_name varchar(50) not null, last_name varchar(50) not null, username varchar(100) not null unique, password varchar(255) not null, primary key (id))
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists trainee add constraint FKpx9kccl4t64wtsi8geile7vwo foreign key (id) references users
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists trainer add constraint FK8kfknuu0rsxcbd8gykyw2ag65 foreign key (specialization_id) references training_type
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists trainer add constraint FKd2hg6g09xsi5yyhtg5btyx13m foreign key (id) references users
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists trainer_trainee add constraint FKm7wj3nyjrw8j1u53akhhb4k1m foreign key (trainee_id) references trainee
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists trainer_trainee add constraint FKm2xgvb8t7fw609c2qpvuhofhf foreign key (trainer_id) references trainer
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists training add constraint FKi2dctw34e0xl50d8tsnrre7te foreign key (trainee_id) references trainee
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists training add constraint FK7r3b25ygw5bdjamojskmpk0b9 foreign key (trainer_id) references trainer
+2025-10-19 10:02:20 [Test worker] DEBUG org.hibernate.SQL - [tx:] alter table if exists training add constraint FKosdbocw0x9ygfmna67s7vtewh foreign key (training_type_id) references training_type
+2025-10-19 10:02:20 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [tx:] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-19 10:02:21 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - [tx:] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-19 10:02:22 [Test worker] INFO  o.s.b.t.m.w.SpringBootMockServletContext - [tx:] Initializing Spring TestDispatcherServlet ''
+2025-10-19 10:02:22 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - [tx:] Initializing Servlet ''
+2025-10-19 10:02:22 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - [tx:] Completed initialization in 1 ms
+2025-10-19 10:02:22 [Test worker] INFO  c.g.g.c.AuthControllerIntegrationTest - [tx:] Started AuthControllerIntegrationTest in 7.112 seconds (process running for 9.67)
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:f80ea64e-0d99-4813-807b-52048d71e32b] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:f80ea64e-0d99-4813-807b-52048d71e32b] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:f80ea64e-0d99-4813-807b-52048d71e32b] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:f80ea64e-0d99-4813-807b-52048d71e32b] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:23 [Test worker] DEBUG org.hibernate.SQL - [tx:f80ea64e-0d99-4813-807b-52048d71e32b] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:8f4c2413-73f1-4a06-b806-f0ed90b34d05] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:8f4c2413-73f1-4a06-b806-f0ed90b34d05] insert into trainer (specialization_id,id) values (?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:8f4c2413-73f1-4a06-b806-f0ed90b34d05] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:8f4c2413-73f1-4a06-b806-f0ed90b34d05] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:e378fd47-3194-4db8-aef0-dff3fa260817] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:e378fd47-3194-4db8-aef0-dff3fa260817] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:e378fd47-3194-4db8-aef0-dff3fa260817] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:cc7b29e5-624a-4353-b38f-efa2827fb288] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:cc7b29e5-624a-4353-b38f-efa2827fb288] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:cc7b29e5-624a-4353-b38f-efa2827fb288] insert into trainee (address,date_of_birth,id) values (?,?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:cc7b29e5-624a-4353-b38f-efa2827fb288] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:4f0778b3-a9ff-48cf-a104-2d676f31b107] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:4f0778b3-a9ff-48cf-a104-2d676f31b107] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:4f0778b3-a9ff-48cf-a104-2d676f31b107] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:940924c0-671b-4195-b545-c8823223f868] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:940924c0-671b-4195-b545-c8823223f868] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:940924c0-671b-4195-b545-c8823223f868] insert into trainee (address,date_of_birth,id) values (?,?,?)
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:940924c0-671b-4195-b545-c8823223f868] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] update users set is_active=?,first_name=?,last_name=?,password=?,username=? where id=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:9cc6d82c-a60d-4d23-8ecc-332a26821fa7] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:9cc6d82c-a60d-4d23-8ecc-332a26821fa7] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:9cc6d82c-a60d-4d23-8ecc-332a26821fa7] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:24 [Test worker] DEBUG org.hibernate.SQL - [tx:ec3e925b-3807-40bd-a58f-e63c9f51afe2] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:ec3e925b-3807-40bd-a58f-e63c9f51afe2] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:ec3e925b-3807-40bd-a58f-e63c9f51afe2] insert into trainee (address,date_of_birth,id) values (?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:ec3e925b-3807-40bd-a58f-e63c9f51afe2] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:de56faa7-6fad-4fcb-b26e-af20415ef959] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:de56faa7-6fad-4fcb-b26e-af20415ef959] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:de56faa7-6fad-4fcb-b26e-af20415ef959] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] insert into trainee (address,date_of_birth,id) values (?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select distinct t1_0.id,t1_0.address,at1_0.trainee_id,at1_1.id,at1_1.specialization_id,s1_0.id,s1_0.training_type_name,u2_0.id,u2_0.is_active,u2_0.first_name,u2_0.last_name,u2_0.password,u2_0.username,t1_0.date_of_birth,u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from trainee t1_0 left join users u1_0 on u1_0.id=t1_0.id left join trainer_trainee at1_0 on t1_0.id=at1_0.trainee_id left join trainer at1_1 on at1_1.id=at1_0.trainer_id left join users u2_0 on u2_0.id=at1_1.id left join training_type s1_0 on s1_0.id=at1_1.specialization_id where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b2626fb7-9e9f-4adc-a806-ca46988dee3b] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b2626fb7-9e9f-4adc-a806-ca46988dee3b] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b2626fb7-9e9f-4adc-a806-ca46988dee3b] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:fb5f16c6-189e-471a-bddb-6a027dd36a48] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:fb5f16c6-189e-471a-bddb-6a027dd36a48] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:fb5f16c6-189e-471a-bddb-6a027dd36a48] insert into trainee (address,date_of_birth,id) values (?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:fb5f16c6-189e-471a-bddb-6a027dd36a48] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:71cff905-afd0-435b-a6a3-5bb1888a9740] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:71cff905-afd0-435b-a6a3-5bb1888a9740] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:71cff905-afd0-435b-a6a3-5bb1888a9740] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:71cff905-afd0-435b-a6a3-5bb1888a9740] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:71cff905-afd0-435b-a6a3-5bb1888a9740] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] insert into trainer (specialization_id,id) values (?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:c225cb3c-f9dd-4788-9061-7bf04559f97d] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:c225cb3c-f9dd-4788-9061-7bf04559f97d] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:c225cb3c-f9dd-4788-9061-7bf04559f97d] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b5491985-f5dc-4ac2-86e2-1aa184ea627e] insert into training_type (training_type_name,id) values (?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b5491985-f5dc-4ac2-86e2-1aa184ea627e] insert into users (is_active,first_name,last_name,password,username,id) values (?,?,?,?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b5491985-f5dc-4ac2-86e2-1aa184ea627e] insert into trainee (address,date_of_birth,id) values (?,?,?)
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b5491985-f5dc-4ac2-86e2-1aa184ea627e] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:b5491985-f5dc-4ac2-86e2-1aa184ea627e] select t1_0.id,t1_0.specialization_id from trainer t1_0 join users u1_0 on u1_0.id=t1_0.id where lower(u1_0.first_name)=? and lower(u1_0.last_name)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select tt1_0.id,tt1_0.training_type_name from training_type tt1_0 where tt1_0.training_type_name=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.address,t1_0.date_of_birth from trainee t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select t1_0.id,t1_0.specialization_id from trainer t1_0
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:ee2f52bf-e10c-46af-9ca5-279d1b3cd0b8] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0 where lower(u1_0.username)=?
+2025-10-19 10:02:25 [Test worker] DEBUG org.hibernate.SQL - [tx:] select u1_0.id,u1_0.is_active,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from users u1_0
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 19, 2025, 10:02:40 AM</p>
+</div>
+</div>
+</body>
+</html>

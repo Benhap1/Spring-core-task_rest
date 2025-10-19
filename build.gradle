@@ -1,0 +1,76 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.5.6'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id 'application'
+}
+
+group = 'com.gymcrm'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+ext {
+    hibernateVersion = '7.1.1.Final'
+    junitVersion = '5.11.3'
+    lombokVersion = '1.18.40'
+    mockitoVersion = '5.19.0'
+    assertjVersion = '3.26.0'
+    aspectjVersion = '1.9.22.1'
+    flywayVersion = '11.4.0'
+    logbackVersion = '1.5.13'
+    postgresVersion = '42.7.8'
+    springSecurityCryptoVersion = '6.5.5'
+    springdocVersion = '2.7.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // === SPRING BOOT STARTERS ===
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+
+    implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:${springdocVersion}"
+
+    // === DATABASE ===
+    runtimeOnly "org.postgresql:postgresql:${postgresVersion}"
+
+    // === MIGRATIONS ===
+    implementation "org.flywaydb:flyway-database-postgresql:${flywayVersion}"
+
+    // === SECURITY UTILS ===
+    implementation "org.springframework.security:spring-security-crypto:${springSecurityCryptoVersion}"
+
+    // === ASPECTJ ===
+    implementation "org.aspectj:aspectjweaver:${aspectjVersion}"
+    implementation "org.aspectj:aspectjrt:${aspectjVersion}"
+
+    // === LOMBOK ===
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    // === TESTING ===
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'com.h2database:h2'
+}
+
+application {
+    mainClass = 'com.gymcrm.gym_crm_spring.GymCrmSpringApplication'
+}
+
+test {
+    useJUnitPlatform()
+}
