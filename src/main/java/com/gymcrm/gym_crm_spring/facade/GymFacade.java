@@ -37,7 +37,6 @@ import com.gymcrm.gym_crm_spring.service.TrainingTypeService;
 import com.gymcrm.gym_crm_spring.service.UserService;
 import com.gymcrm.gym_crm_spring.utils.UserUtils;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
