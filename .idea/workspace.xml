@@ -5,84 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8553f3ef-f390-41e7-ac9e-24250b01f1e0" name="Changes" comment="fix: import fixed in AppConfig">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/controller/TraineeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/controller/TrainerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/controller/TrainingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/controller/TrainingTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/ChangePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeActivationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeProfileResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeProfileUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeProfileUpdateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeRegistrationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeShortResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeTrainerListUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeTrainerListUpdateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeTrainingResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TraineeTrainingsFilterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerActivationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerProfileResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerProfileUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerProfileUpdateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerRegistrationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerShortResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainerTrainingsListResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainingCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dto/TrainingTypeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/exception/ApiErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/exception/InvalidCredentialsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/exception/TraineeNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/exception/TrainerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/exception/TrainingTypeNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/exception/UserAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/logging/TransactionLoggingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/security/AuthenticationAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/security/RequireAuthentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/security/TokenRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/security/TokenStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/controller/AuthControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/controller/TraineeControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/controller/TrainerControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/controller/TrainingControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/controller/TrainingTypeControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/GymCrmSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/GymCrmSpringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/config/DevLoggingConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/config/FlywayConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/config/ProdLoggingConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dao/TraineeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dao/TraineeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dao/TrainerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dao/TrainerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dao/TrainingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/dao/TrainingDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/facade/GymFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/facade/GymFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/logging/ServiceLoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/logging/ServiceLoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TraineeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TraineeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TrainerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TrainerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TrainingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TrainingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TrainingTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/TrainingTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gymcrm/gym_crm_spring/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_initial_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_initial_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/GymCrmSpringApplicationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/dao/TrainingDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/domain/DomainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/facade/GymFacadeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/logging/LoggingAspectTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/service/TraineeServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/service/TrainerServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/service/TrainingServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gymcrm/gym_crm_spring/utils/UserUtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +47,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Benhap1/Spring-core-task.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Benhap1/Spring-core-task_rest.git&quot;,
     &quot;accountId&quot;: &quot;60ee9554-ab8a-4fd4-acbc-1ef561f5471f&quot;
   }
 }</component>
@@ -468,7 +391,8 @@
       <workItem from="1760770201490" duration="20383000" />
       <workItem from="1760805469631" duration="3555000" />
       <workItem from="1760846075226" duration="13885000" />
-      <workItem from="1760887662541" duration="5407000" />
+      <workItem from="1760887662541" duration="6329000" />
+      <workItem from="1760982368587" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="fix: boot erased">
       <option name="closed" value="true" />
