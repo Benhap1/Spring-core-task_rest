@@ -1,0 +1,57 @@
+# =========================
+#  IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+out/
+
+# =========================
+# ⚙ Gradle
+# =========================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# =========================
+#  Java
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+
+# =========================
+#  Test Reports
+# =========================
+test-output/
+reports/
+jacoco.exec
+*.log
+
+# =========================
+#  System files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+#  Linux / macOS temp files
+# =========================
+*.swp
+*.swo
+*~
+
+# =========================
+#  Environment and configs (optional)
+# =========================
+.env
+application-local.yml
+application-local.properties
+
+# =========================
+#  Other build tools
+# =========================
+target/
+bin/
+dist/

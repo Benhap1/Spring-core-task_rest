@@ -3,6 +3,8 @@ package com.gymcrm.gym_crm_spring.exception;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.ConstraintViolationException;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -16,7 +18,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import java.time.LocalDateTime;
 import java.time.format.DateTimeParseException;
 
-@ControllerAdvice
+@ControllerAdvice(basePackages = "com.gymcrm.gym_crm_spring.controller")
 public class GlobalExceptionHandler {
 
     private ApiErrorResponse buildErrorResponse(
